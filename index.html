@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja Bob — Grid Performance</title>
+
+  <!-- Metatags Gerais -->
+  <meta name="description" content="Loja Bob — produtos incríveis com design responsivo e desempenho otimizado." />
+  <meta name="keywords" content="Loja, produtos, CSS Grid, responsivo, otimização" />
+  <meta name="author" content="Vítor Gomes" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Loja Bob — Grid Performance" />
+  <meta property="og:description" content="Confira a nova Loja Bob com design em CSS Grid e desempenho otimizado." />
+  <meta property="og:image" content="img/card-lojabob.webp" />
+  <meta property="og:url" content="https://github.com/miticozin" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <h1 class="Lojatext">Loja Bob</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#produtos">Destaque</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#formulario">Formulário</a></li>
+        <li><a href="#galeria">Galeria de Produtos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="inicio">
+    <h2>Bem-vindo à Loja Bob!</h2>
+      <img src="img/carabob.webp" alt="Imagem principal da Loja Bob"/>
+  </section>
+
+  <section id="formulario" class="form-section">
+    <h2>Entre em Contato</h2>
+    <div class="form-grid">
+      <picture class="form-imagem">
+        <source srcset="img/bobcontato.webp" media="(min-width:1024px)" type="image/webp">
+        <source srcset="img/patricktelefone.webp" media="(min-width:768px)" type="image/webp">
+        <source srcset="img/patrickcontato.webp" media="(max-width:484px)" type="image/webp">
+
+  
+        <img src="img/patricktelefone.webp" alt="Imagem ilustrativa do formulário" width="800" height="600" />
+      </picture>
+
+      <form>
+        <fieldset>
+          <legend>Formulário de Contato</legend>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="data">Data de Nascimento:</label>
+          <input type="date" id="data" name="data" />
+
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <section id="galeria" class="galeria">
+    <h2>Galeria de Produtos</h2>
+    <div class="galeria-grid">
+      <div class="foto f1"></div>
+      <div class="foto f2"></div>
+      <div class="foto f3"></div>
+      <div class="foto f4"></div>
+      <div class="foto f5"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Loja Bob — Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

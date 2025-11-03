@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #fafafa;
+  color: #111;
+  line-height: 1.6;
+}
+
+header {
+  background: rgb(97, 0, 97);
+  color: #fff;
+  padding: 1rem;
+}
+header h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+.inicio {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Roboto Slab', serif, Helvetica, sans-serif, Arial;
+}
+.inicio picture img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 1rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.1);
+  border: 5px solid rgb(97, 0, 97);
+}
+
+/* FORMULÁRIO */
+.form-section {
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form-imagem img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+form fieldset {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  border: 2px solid rgb(97, 0, 97);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  background: rgb(97, 0, 97);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #c71585;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* GALERIA */
+.galeria {
+  padding: 2rem 1rem;
+  background: #f5f5f5;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 70vh;
+}
+
+.foto {
+  aspect-ratio: 1/ 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+  border-radius: 1rem;
+  min-height: 200px;
+}
+
+.f1 { background-image: url('../img/bobakatsuki.webp'); }
+.f2 { background-image: url('../img/patrickrenegado.webp'); }
+.f3 { background-image: url('../img/bobruto.webp'); }
+.f4 { background-image: url('../img/lulamoluscada.webp'); }
+.f5 { background-image: url('../img/patrickretorna.webp'); }
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgb(97, 0, 97);
+  color: white;
+}
