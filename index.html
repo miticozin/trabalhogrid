@@ -36,8 +36,33 @@
 
   <section id="inicio" class="inicio">
     <h2>Bem-vindo à Loja Bob!</h2>
-      <img src="img/carabob.webp" alt="Imagem principal da Loja Bob"/>
+       <picture>
+      <source srcset="img/carabob.webp" media="(min-width: 1024px)" />
+      <source srcset="img/carabob.webp" media="(min-width: 600px)" />
+      <img src="img/carabob.webp" alt="Imagem da Loja Bob" width="900" height="500" />
   </section>
+
+<section id="produtos" class="produtos">
+    <h2>Produtos em Destaque</h2>
+    <div class="produtos-container">
+      <div class="produto">
+        <img src="img/bobruto.webp" alt="Produto 1" />
+        <h3>BOBRUTO</h3>
+        <p>Crossover entre os personagens Bob Esponja e Naruto.</p>
+      </div>
+      <div class="produto">
+        <img src="img/bobdedo.webp" alt="Produto 2" />
+        <h3>BOB DEDO</h3>
+        <p>Bob vestindo seu manto parece indicar algo.</p>
+      </div>
+      <div class="produto">
+        <img src="img/bobakatsuki.webp" alt="Produto 3" />
+        <h3>BOB AKATSUKI</h3>
+        <p>Bob finalmente revela seu segredo.</p>
+      </div>
+    </div>
+  </section>
+
 
   <section id="formulario" class="form-section">
     <h2>Entre em Contato</h2>
@@ -74,6 +99,7 @@
       </form>
     </div>
   </section>
+  <p class="topo"><a href="#top">Voltar para o topo ↑</a></p>
 
   <section id="galeria" class="galeria">
     <h2>Galeria de Produtos</h2>
@@ -85,7 +111,7 @@
       <div class="foto f5"></div>
     </div>
   </section>
-
+<p class="topo"><a href="#top">Voltar para o topo ↑</a></p>
   <footer>
     <p>&copy; 2025 Loja Bob — Todos os direitos reservados.</p>
   </footer>
