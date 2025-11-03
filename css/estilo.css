@@ -53,6 +53,35 @@ nav a:hover {
   border: 5px solid rgb(97, 0, 97);
 }
 
+.produtos {
+  padding: 2rem 1rem;
+}
+.produtos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.produto {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.produto:hover {
+  transform: scale(1.05);
+}
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: contain;
+}
+
 /* FORMULÁRIO */
 .form-section {
   padding: 2rem 1rem;
@@ -137,6 +166,15 @@ form button:hover {
 .f3 { background-image: url('../img/bobruto.webp'); }
 .f4 { background-image: url('../img/lulamoluscada.webp'); }
 .f5 { background-image: url('../img/patrickretorna.webp'); }
+
+.topo{
+margin-top:1.2rem;
+}
+.topo a{
+color:rgb(17, 170, 170);
+text-decoration:none;
+font-weight:600;
+}
 
 footer {
   text-align: center;
